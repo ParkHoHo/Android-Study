@@ -59,4 +59,4 @@ adb shell /data/local/tmp/hello-world.arm64
 ```
 
 
-<img src="../photos/android.png">
+<img src="./photos/android.png">
