@@ -1,6 +1,6 @@
 # Compile Set
 
-1. ~/.bashrc에 추가
+## 1. ~/.bashrc에 추가
 ```
 vim ~/.bashrc
 ```
@@ -42,14 +42,14 @@ alias android-arm32-cc="compile_android arm32 $ANDROID_TOOLCHAIN/clang"
 > cpp 코드는 compile_android()에서 cpp를 다룰 수 있도록 변경하면 된다. 
 
 
-## 실행 방법
+### 실행 방법
 ```
 android-arm64-cc
 android-arm32-cc
 android-x86_64-cc
 ```
 
-## 안드로이드에서 실행하기
+### 안드로이드에서 실행하기
 ```
 termux-elf-cleaner --api-level 25 ./hello-world.arm64
 
@@ -60,3 +60,31 @@ adb shell /data/local/tmp/hello-world.arm64
 
 
 <img src="./photos/android.png">
+
+## 2. ndk-build
+
+### 현재 디렉토리에 jni폴더 생성
+
+```
+mkdir jni
+```
+
+### Android.mk, *.c 생성
+
+```
+cd jni
+code Android.mk
+code hello.c
+```
+
+### 빌드
+jni가 존재하는 상위 폴더로 이동하고 빌드
+```
+cd ..
+ndk-build or  /path/to/ndk-build
+```
+
+### 결론
+libs폴더 안에 각각의 아키텍처에 해당하는 폴더 생성됨.
+
+
