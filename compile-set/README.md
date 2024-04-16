@@ -88,3 +88,6 @@ ndk-build or  /path/to/ndk-build
 libs폴더 안에 각각의 아키텍처에 해당하는 폴더 생성됨.
 
 
+<img src="./photos/build.png">
+
+<img src="./photos/cross-compile-jni.png">
