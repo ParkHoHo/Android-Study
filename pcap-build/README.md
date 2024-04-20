@@ -1,5 +1,4 @@
 # libpcap-build
-libpcap 소스코드 변경으로 같이 올림.
 
 ## how to build?
 
