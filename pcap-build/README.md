@@ -85,4 +85,4 @@ ndk-build
 [arm64-v8a] Install        : interface-list => libs/arm64-v8a/interface-list
 ```
 
-<img src="/photos/file-interface-list.png">
+<img src="./photos/file-interface-list.png">
